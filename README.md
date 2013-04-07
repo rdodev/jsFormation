@@ -1,7 +1,7 @@
 jsFormation
 ===========
 
-An AWS Template Generator
+An AWS CloudFormation Template Generator
 
 State of Development
 ===========
@@ -9,7 +9,7 @@ Very, very, very, very early in the development stages. Barely any functionality
 
 License
 ===========
-The MIT License
+The MIT License (MIT)
 
 Copyright (C) 2013 Ruben Orduz.
 
