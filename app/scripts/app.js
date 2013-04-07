@@ -7,6 +7,18 @@ angular.module('cfApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/resources', {
+        templateUrl: 'views/resources.html',
+        controller: 'ResourcesCtrl'
+      })
+      .when('/resources/ec2', {
+        templateUrl: 'views/ec2.html',
+        controller: 'ResourcesEC2Ctrl'
+      })
+      .when('/resources/s3', {
+        templateUrl: 'views/s3.html',
+        controller: 'ResourcesS3Ctrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

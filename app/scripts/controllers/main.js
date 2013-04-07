@@ -1,10 +1,12 @@
 'use strict';
 
 angular.module('cfApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, $rootScope, $location) {
+    
+    $rootScope.cfObj = {};
+    $rootScope.cfObj.Description = '';
+
+    $scope.goToResources = function () {
+        $location.path('/resources').replace();
+    };
   });
