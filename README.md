@@ -9,7 +9,7 @@ Very, very, very, very early in the development stages. Barely any functionality
 
 Where can I see it in action?
 ===========
-Glad you asked. The latest version is hosted at http://rdodev.github.com
+Glad you asked. The latest version is hosted at http://rdodev.github.io
 
 License
 ===========
