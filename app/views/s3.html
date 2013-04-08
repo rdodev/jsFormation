@@ -1,1 +1,36 @@
-<p>This is the s3 view.</p>
+<div class="well">
+	<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="bucket_name">Bucket Name</label>
+    <div class="controls">
+      <input type="text" id="bucket_name" ng-model="bucketName">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="access_control">Access Control</label>
+    <div class="controls">
+      <select id="access_control" class="input-block-level" ng-model="accessControl" 
+      ng-options="obj for obj in acList">    
+	</select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="website_index">Index Document</label>
+    <div class="controls">
+      <input type="text" id="website_index" ng-model="websiteIndex">
+    </div>
+  </div>
+    <div class="control-group">
+    <label class="control-label" for="website_error">Error Document</label>
+    <div class="controls">
+      <input type="text" id="website_error" ng-model="websiteError">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button class="btn" ng-click="addS3Resource()">Add Resource</button>
+      <button class="btn btn-inverse" ng-click="cancel()">Cancel</button>
+    </div>
+  </div>
+</form>
+</div>
