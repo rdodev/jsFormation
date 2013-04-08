@@ -1,6 +1,15 @@
 'use strict';
 
 angular.module('cfApp')
-  .controller('OutputCtrl', function ($scope, $rootScope) {
+  .controller('OutputCtrl', function ($scope, $rootScope, $location) {
     $scope.output = angular.toJson($rootScope.cfObj, true);
+
+    $scope.addMore = function () {
+        $location.path('/resources');
+    };
+
+    $scope.reset = function () {
+        $rootScope.cfObj = {};
+        $location.path('/');
+    };
   });
