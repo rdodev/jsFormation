@@ -28,7 +28,7 @@
   </div>
   <div class="control-group">
     <div class="controls">
-      <button class="btn" ng-click="addS3Resource()">Add Resource</button>
+      <button class="btn" ng-click="addS3Resource()" ng-disabled="!bucketName">Add Resource</button>
       <button class="btn btn-inverse" ng-click="cancel()">Cancel</button>
     </div>
   </div>
