@@ -11,8 +11,8 @@ angular.module('cfApp')
 
     $scope.addS3Resource = function () {
         var props = {};
-        var i = parseInt($scope.accessControl, 10) || 0;
-        props.AccessControl =  $scope.acList[i];
+        var i = $scope.accessControl || "Private";
+        props.AccessControl =  i;
         if($scope.indexDocument || $scope.errorDocument) {
             props.WebsiteConfiguration = {};
             props.WebsiteConfiguration.IndexDocument = $scope.indexDocument;
