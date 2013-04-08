@@ -6,8 +6,11 @@ angular.module('cfApp')
     $rootScope.cfObj = {};
     $rootScope.cfObj.AWSTemplateFormatVersion = '2010-09-09';
     $rootScope.cfObj.Description = '';
+    $rootScope.cfObj.Resources = {};
     $rootScope.ec2 = 0;
     $rootScope.s3 = 0;
+    $rootScope.s3Resources = [];
+    $rootScope.ec2Resources = [];
 
     $scope.goToResources = function () {
         $location.path('/resources');

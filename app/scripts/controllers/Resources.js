@@ -2,7 +2,6 @@
 
 angular.module('cfApp')
   .controller('ResourcesCtrl', function ($scope, $rootScope, $location) {
-    $scope.cfObj = $rootScope.cfObj;
 
     $scope.addEC2Resource = function () {
         $location.path('/ec2');
@@ -17,7 +16,7 @@ angular.module('cfApp')
     };
 
     $scope.hasMinimumRequirements = function () {
-        return false;
+        return $rootScope.s3 > 0 || $rootScope.ec2 > 0;
     };
 
   });

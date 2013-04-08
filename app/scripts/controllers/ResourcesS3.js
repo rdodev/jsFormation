@@ -18,6 +18,10 @@ angular.module('cfApp')
             props.WebsiteConfiguration.IndexDocument = $scope.indexDocument;
             props.WebsiteConfiguration.errorDocument = $scope.errorDocument;
         }
+        $scope.S3Resouce.Properties = props;
+        $rootScope.s3 += 1;
+        $rootScope.cfObj.Resources[$scope.bucketName.toString()] = $scope.S3Resouce;
+        $location.path('/resources');
     };
 
     $scope.cancel = function () {
