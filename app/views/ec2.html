@@ -1,1 +1,52 @@
-<p>This is the ec2 view.</p>
+<div class="well">
+<form name="ec2form" class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="instance_name">Instance Name</label>
+    <div class="controls">
+      <input type="text" id="instance_name" ng-model="instanceName" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="instance_type">Instance Type</label>
+    <div class="controls">
+      <select id="instance_type" class="input-block-level" ng-model="InstanceType" 
+      ng-options="obj for obj in typeList" required>    
+	</select>
+    </div>
+  </div>
+   <div class="control-group">
+    <label class="control-label" for="avail_zones">Availability Zone</label>
+    <div class="controls">
+      <select id="avail_zones" class="input-block-level" ng-model="AvailabilityZone" 
+      ng-options="obj for obj in zones" required>    
+	</select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="image_id">Image ID</label>
+    <div class="controls">
+      <input type="text" id="image_id" ng-model="ImageID" required>
+    </div>
+  </div>
+    <div class="control-group">
+    <label class="control-label" for="key_name">Key Name</label>
+    <div class="controls">
+      <input type="text" id="key_name" ng-model="KeyName">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="disable_termination">Disable API Termination</label>
+    <div class="controls">
+     <select id="disable_termination" class="input-block-level" ng-model="DisableApiTermination" 
+      ng-options="o.value for o in disableTerminationValues">    
+	</select>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button class="btn" ng-click="addEC2Resource()" ng-disabled="!ec2form.$valid">Add Resource</button>
+      <button class="btn btn-inverse" ng-click="cancel()">Cancel</button>
+    </div>
+  </div>
+</form>
+</div>
