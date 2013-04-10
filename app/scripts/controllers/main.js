@@ -9,8 +9,7 @@ angular.module('cfApp')
     $rootScope.cfObj.Resources = {};
     $rootScope.ec2 = 0;
     $rootScope.s3 = 0;
-    $rootScope.s3Resources = [];
-    $rootScope.ec2Resources = [];
+    $rootScope.dynamo = 0;
 
     $scope.goToResources = function () {
         $location.path('/resources');

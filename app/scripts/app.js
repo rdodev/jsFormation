@@ -19,6 +19,10 @@ angular.module('cfApp', [])
         templateUrl: 'views/s3.html',
         controller: 'ResourcesS3Ctrl'
       })
+      .when('/dynamo', {
+        templateUrl: 'views/dynamo.html',
+        controller: 'ResourceDynamoCtrl'
+      })
       .when('/output', {
         templateUrl: 'views/output.html',
         controller: 'OutputCtrl'

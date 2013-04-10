@@ -27,15 +27,10 @@ angular.module('cfApp')
         $rootScope.cfObj.Resources[$scope.instanceName.toString()] = $scope.EC2Resource;
         $rootScope.ec2 += 1;
         $location.path('/resources');
-
     };
 
     $scope.cancel = function () {
         $location.path('/resources');
-    };
-
-    $scope.isValid =  function () {
-        return ($scope.instanceName !== "" && $scope.AvailabilityZone !== "" && $scope.InstanceType !== "" && $scope.ImageId !== "");
     };
 
   });

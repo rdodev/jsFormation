@@ -11,12 +11,16 @@ angular.module('cfApp')
         $location.path('/s3');
     };
 
+    $scope.addDynamoDBResource = function () {
+        $location.path('/dynamo');
+    };
+
     $scope.goToOutput = function () {
         $location.path('/output');
     };
 
     $scope.hasMinimumRequirements = function () {
-        return $rootScope.s3 > 0 || $rootScope.ec2 > 0;
+        return $rootScope.s3 > 0 || $rootScope.ec2 > 0 || $rootScope.dynamo > 0;
     };
 
   });
