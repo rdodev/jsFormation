@@ -10,13 +10,15 @@ Very, very, very, very early in the development stages. Barely any functionality
 How to help?
 ============
 There are two ways to help:
+
 1. By using it and reporting bugs and/or feature requests.
 2. By helping with the coding and testing.
 If you choose to help with coding and testing, you'll need at least the following:
 
 Git (of course),  NodeJS, Yeoman, Grunt, SaSS and Compass. You'll also need the up-to-date angular and karma templates.
 
-So, assuming you have all properly installed, do:
+So, assuming you have all prequisites properly installed, do:
+
 1. Fork this repo.
 2. If you wish to add a new controller use `yo angular:controller MyControllerName`
 3. If you wish to add a new view use `yo angular:view myViewName` (don't add .html)
