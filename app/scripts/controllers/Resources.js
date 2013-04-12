@@ -15,12 +15,16 @@ angular.module('cfApp')
         $location.path('/dynamo');
     };
 
+    $scope.addSQSResource = function () {
+        $location.path('/sqs');
+    };
+
     $scope.goToOutput = function () {
         $location.path('/output');
     };
 
     $scope.hasMinimumRequirements = function () {
-        return $rootScope.s3 > 0 || $rootScope.ec2 > 0 || $rootScope.dynamo > 0;
+        return $rootScope.s3 > 0 || $rootScope.ec2 > 0 || $rootScope.dynamo > 0 || $rootScope.sqs > 0;
     };
 
   });

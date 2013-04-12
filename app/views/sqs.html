@@ -1,0 +1,22 @@
+<div class="well">
+	<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="que_name">Queue Name</label>
+    <div class="controls">
+      <input type="text" id="que_name" ng-model="queName" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="visibility_timeout">Visibility Timeout</label>
+    <div class="controls">
+      <input type="text" id="visibility_timeout" ng-model="visibilityTimeout">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button class="btn" ng-click="addSQSResource()" ng-disabled="!queName">Add Resource</button>
+      <button class="btn btn-inverse" ng-click="cancel()">Cancel</button>
+    </div>
+  </div>
+</form>
+</div>

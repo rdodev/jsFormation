@@ -10,6 +10,7 @@ angular.module('cfApp')
     $rootScope.ec2 = 0;
     $rootScope.s3 = 0;
     $rootScope.dynamo = 0;
+    $rootScope.sqs = 0;
 
     $scope.goToResources = function () {
         $location.path('/resources');

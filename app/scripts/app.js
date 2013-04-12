@@ -21,7 +21,11 @@ angular.module('cfApp', [])
       })
       .when('/dynamo', {
         templateUrl: 'views/dynamo.html',
-        controller: 'ResourceDynamoCtrl'
+        controller: 'ResourcesDynamoCtrl'
+      })
+      .when('/sqs', {
+        templateUrl: 'views/sqs.html',
+        controller: 'ResourcesSQSCtrl'
       })
       .when('/output', {
         templateUrl: 'views/output.html',

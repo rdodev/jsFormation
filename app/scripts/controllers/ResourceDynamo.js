@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('cfApp')
-  .controller('ResourceDynamoCtrl', function ($scope, $rootScope, $location) {
+  .controller('ResourcesDynamoCtrl', function ($scope, $rootScope, $location) {
     $scope.DynamoDBResource = {"Type" : "AWS::DynamoDB::Table"};
     $scope.validTypes = ["S", "N"];
     $scope.Properties = {};
