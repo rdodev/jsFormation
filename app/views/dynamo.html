@@ -3,13 +3,13 @@
   <div class="control-group">
     <label class="control-label" for="table_name">Table Name</label>
     <div class="controls">
-      <input type="text" id="table_name" ng-model="tableName" required>
+      <input type="text" id="table_name" ng-pattern="/^[A-Za-z0-9_]+$/" ng-model="tableName" required>
     </div>
   </div>
   <div class="control-group">
     <label class="control-label" for="hash_key_name">Hash Key Name</label>
     <div class="controls">
-      <input type="text" id="hash_key_name" ng-model="KSHashKeyName" required> 
+      <input type="text" id="hash_key_name" ng-pattern="/^[A-Za-z0-9_]+$/" ng-model="KSHashKeyName" required> 
     </div>
   </div>
    <div class="control-group">
@@ -23,7 +23,7 @@
   <div class="control-group">
     <label class="control-label" for="rk_name">Range Key Name</label>
     <div class="controls">
-      <input type="text" id="rk_name" ng-model="KSHashRangeName">
+      <input type="text" id="rk_name" ng-pattern="/^[A-Za-z0-9_]+$/" ng-model="KSHashRangeName">
     </div>
   </div>
    <div class="control-group">
@@ -36,13 +36,13 @@
    <div class="control-group">
     <label class="control-label" for="prov_reads">Provisioned Reads</label>
     <div class="controls">
-      <input type="text" id="prov_reads" ng-model="ReadCapacityUnits" required>
+      <input type="text" id="prov_reads" ng-pattern="/^\d+$/" ng-model="ReadCapacityUnits" required>
     </div>
   </div>
    <div class="control-group">
     <label class="control-label" for="prov_writes">Provisioned Writes</label>
     <div class="controls">
-      <input type="text" id="prov_writes" ng-model="WriteCapacityUnits" required>
+      <input type="text" id="prov_writes" ng-pattern="/^\d+$/" ng-model="WriteCapacityUnits" required>
     </div>
   </div>
   <div class="control-group">

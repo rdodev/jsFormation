@@ -3,7 +3,7 @@
   <div class="control-group">
     <label class="control-label" for="instance_name">Instance Name</label>
     <div class="controls">
-      <input type="text" id="instance_name" ng-model="instanceName" required>
+      <input type="text" id="instance_name" ng-model="instanceName" ng-pattern="/^[A-Za-z0-9_]+$/" required>
     </div>
   </div>
   <div class="control-group">
@@ -31,7 +31,7 @@
     <div class="control-group">
     <label class="control-label" for="key_name">Key Name</label>
     <div class="controls">
-      <input type="text" id="key_name" ng-model="KeyName">
+      <input type="text" id="key_name" ng-pattern="/^[A-Za-z0-9_\-]+$/" ng-model="KeyName">
     </div>
   </div>
   <div class="control-group">

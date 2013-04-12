@@ -3,7 +3,7 @@
   <div class="control-group">
     <label class="control-label" for="bucket_name">Bucket Name</label>
     <div class="controls">
-      <input type="text" id="bucket_name" ng-model="bucketName" required>
+      <input type="text" id="bucket_name" ng-pattern="/^[A-Za-z0-9_]+$/" ng-model="bucketName" required>
     </div>
   </div>
   <div class="control-group">
@@ -17,13 +17,13 @@
   <div class="control-group">
     <label class="control-label" for="website_index">Index Document</label>
     <div class="controls">
-      <input type="text" id="website_index" ng-model="indexDocument">
+      <input type="text" id="website_index" ng-pattern="/^[A-Za-z0-9_]+$/" ng-model="indexDocument">
     </div>
   </div>
     <div class="control-group">
     <label class="control-label" for="website_error">Error Document</label>
     <div class="controls">
-      <input type="text" id="website_error" ng-model="errorDocument">
+      <input type="text" id="website_error" ng-pattern="/^[A-Za-z0-9_]+$/" ng-model="errorDocument">
     </div>
   </div>
   <div class="control-group">

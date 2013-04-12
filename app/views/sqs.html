@@ -3,13 +3,13 @@
   <div class="control-group">
     <label class="control-label" for="que_name">Queue Name</label>
     <div class="controls">
-      <input type="text" id="que_name" ng-model="queName" required>
+      <input type="text" id="que_name" ng-model="queName" ng-pattern="/^[A-Za-z0-9_]+$/" required>
     </div>
   </div>
   <div class="control-group">
     <label class="control-label" for="visibility_timeout">Visibility Timeout</label>
     <div class="controls">
-      <input type="text" id="visibility_timeout" ng-model="visibilityTimeout">
+      <input type="text" id="visibility_timeout" ng-pattern="/^\d+$/" ng-model="visibilityTimeout">
     </div>
   </div>
   <div class="control-group">
