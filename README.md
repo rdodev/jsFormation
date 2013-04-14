@@ -5,7 +5,15 @@ An AWS CloudFormation Template Generator
 
 State of Development
 ===========
-Very, very, very, very early in the development stages. Barely any functionality.
+Very, very, very, very early in the development stages. Nothing is guaranteed to work properly -- although I strive to have the products already public in good working condition.
+
+What AWS products does this application cover?
+===========
+
+* EC2 Instances (limited, no UserData yet)
+* S3 Buckets
+* Dynamo DB
+* SQS
 
 How to help?
 ============
