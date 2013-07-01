@@ -2,10 +2,10 @@
 
 angular.module('cfApp')
   .controller('ResourcesSQSCtrl', function ($scope, $rootScope, $location) {
-    $scope.SQSResouce = {"Type" : "AWS::SQS::Queue"};
+    $scope.SQSResouce = {'Type' : 'AWS::SQS::Queue'};
     
-    $scope.queName = "";
-    $scope.visibilityTimeout = "";
+    $scope.queName = '';
+    $scope.visibilityTimeout = '';
 
 
     $scope.addSQSResource = function () {

@@ -2,16 +2,16 @@
 
 angular.module('cfApp')
   .controller('ResourcesS3Ctrl', function ($scope, $rootScope, $location) {
-    $scope.S3Resouce = {"Type" : "AWS::S3::Bucket"};
-    $scope.acList = ["Private", "PublicRead", "PublicReadWrite", "AuthenticatedRead", "BucketOwnerRead", "BucketOwnerFullControl"];
-    $scope.bucketName = "";
-    $scope.accessControl = "";
-    $scope.indexDocument = "";
-    $scope.errorDocument = "";
+    $scope.S3Resouce = {'Type' : 'AWS::S3::Bucket'};
+    $scope.acList = ['Private', 'PublicRead', 'PublicReadWrite', 'AuthenticatedRead', 'BucketOwnerRead', 'BucketOwnerFullControl'];
+    $scope.bucketName = '';
+    $scope.accessControl = '';
+    $scope.indexDocument = '';
+    $scope.errorDocument = '';
 
     $scope.addS3Resource = function () {
         var props = {};
-        var i = $scope.accessControl || "Private";
+        var i = $scope.accessControl || 'Private';
         props.AccessControl =  i;
         if($scope.indexDocument || $scope.errorDocument) {
             props.WebsiteConfiguration = {};

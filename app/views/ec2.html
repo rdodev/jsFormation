@@ -9,7 +9,7 @@
   <div class="control-group">
     <label class="control-label" for="instance_type">Instance Type</label>
     <div class="controls">
-      <select id="instance_type" class="input-block-level" ng-model="InstanceType" 
+      <select id="instance_type" class="input-small" ng-model="InstanceType" 
       ng-options="obj for obj in typeList" required>    
 	</select>
     </div>
@@ -17,7 +17,7 @@
    <div class="control-group">
     <label class="control-label" for="avail_zones">Availability Zone</label>
     <div class="controls">
-      <select id="avail_zones" class="input-block-level" ng-model="AvailabilityZone" 
+      <select id="avail_zones" class="input-small" ng-model="AvailabilityZone" 
       ng-options="obj for obj in zones" required>    
 	</select>
     </div>
@@ -37,7 +37,7 @@
   <div class="control-group">
     <label class="control-label" for="disable_termination">Disable API Termination</label>
     <div class="controls">
-     <select id="disable_termination" class="input-block-level" ng-model="DisableApiTermination" 
+     <select id="disable_termination" class="input-small" ng-model="DisableApiTermination" 
       ng-options="o.value for o in disableTerminationValues">    
 	</select>
     </div>
