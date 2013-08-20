@@ -1,4 +1,4 @@
-jsFormation | [![Build Status](https://travis-ci.org/rdodev/jsFormation.png?branch=master)](https://travis-ci.org/rdodev/jsFormation)
+jsFormation  [![Build Status](https://travis-ci.org/rdodev/jsFormation.png?branch=master)](https://travis-ci.org/rdodev/jsFormation)
 ===========
 
 An AWS CloudFormation Template Generator
