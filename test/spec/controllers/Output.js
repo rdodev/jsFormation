@@ -20,14 +20,20 @@ describe('Controller: OutputCtrl', function () {
     });
   }));
 
-  it('checking json function works as intended', function () {
+  it('json function works as intended', function () {
     expect(scope.output).toBeUndefined();
     rootScope.cfObj = {};
     scope.json();
     expect(scope.output).not.toBeUndefined();
   });
 
-  it('checking reset function works as intended', function () {
+  it('addMore function works as intended', function() {
+    spyOn(loc, 'path');
+    scope.addMore();
+    expect(loc.path).toHaveBeenCalledWith('/resources');
+  });
+
+  it('reset function works as intended', function () {
     spyOn(loc, 'path');
     scope.reset()
     expect(rootScope.cfObj).toEqual({});
