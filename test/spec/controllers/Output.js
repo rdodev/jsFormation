@@ -6,13 +6,15 @@ describe('Controller: OutputCtrl', function () {
   beforeEach(module('cfApp'));
 
   var OutputCtrl,
-    scope;
+    scope,rootScope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller) {
     scope = {};
+    rootScope = {};
     OutputCtrl = $controller('OutputCtrl', {
-      $scope: scope
+      $scope: scope,
+      $rootScope: rootScope
     });
   }));
 

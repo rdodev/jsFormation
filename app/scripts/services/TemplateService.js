@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trunkApp')
-  .service('TemplateService', function TemplateService() {
+angular.module('cfApp')
+  .service('TemplateService', function TemplateService($resource, $http) {
     // AngularJS will instantiate a singleton by calling "new" on this function
   });
