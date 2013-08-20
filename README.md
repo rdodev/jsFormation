@@ -1,7 +1,7 @@
 jsFormation
 ===========
 
-An AWS CloudFormation Template Generator
+An AWS CloudFormation Template Generator  Build Status: [![Build Status](https://travis-ci.org/rdodev/jsFormation.png?branch=master)](https://travis-ci.org/rdodev/jsFormation)
 
 State of Development
 ===========
