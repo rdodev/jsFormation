@@ -9,7 +9,7 @@ describe('Controller: OutputCtrl', function () {
     scope,rootScope, loc;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope, $location) {
+  beforeEach(inject(function ($controller, $location) {
     scope = {};
     rootScope = {};
     loc = $location;
