@@ -7,6 +7,8 @@ State of Development
 ===========
 Very, very, very, very early in the development stages. Nothing is guaranteed to work properly -- although I strive to have the products already public in good working condition.
 
+Now with much better testing and coverage!
+
 What AWS products does this application cover?
 ===========
 
