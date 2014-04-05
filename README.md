@@ -9,6 +9,12 @@ Very, very, very, very early in the development stages. Nothing is guaranteed to
 
 Now with much better testing and coverage!
 
+Roadmap (as of 2014-04-04)
+===========
+ 
+ * Get user-data working and iron out other AWS bugs.
+ * Support for OpenStack Heat templates.
+
 What AWS products does this application cover?
 ===========
 
