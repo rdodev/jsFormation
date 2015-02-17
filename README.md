@@ -9,11 +9,14 @@ Very, very, very, very early in the development stages. Nothing is guaranteed to
 
 Now with much better testing and coverage!
 
-Roadmap (as of 2014-04-04)
+Roadmap (as of 2015-02-17)
 ===========
  
- * Get user-data working and iron out other AWS bugs.
- * Support for OpenStack Heat templates.
+ - [ ] Update to _not_ use Yeoman and related generators
+ - [ ] Upgrade to Angular 1.3
+ - [ ] Upgrade to Bootstrap 3
+ - [ ] Get user-data working and iron out other AWS bugs.
+ - [x] Support for OpenStack Heat templates (this has been spun off to its own project: https://heat.foundry.rocks)
 
 What AWS products does this application cover?
 ===========
