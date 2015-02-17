@@ -16,7 +16,7 @@ Roadmap (as of 2015-02-17)
  - [ ] Upgrade to Angular 1.3
  - [ ] Upgrade to Bootstrap 3
  - [ ] Get user-data working and iron out other AWS bugs.
- - [x] Support for OpenStack Heat templates (this has been spun off to its own project: https://heat.foundry.rocks)
+ - [x] Support for OpenStack Heat templates (this has been spun off to its own project: https://github.com/rdodev/foundry)
 
 What AWS products does this application cover?
 ===========
